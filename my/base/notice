@@ -1,0 +1,6 @@
+1. docker 运行点
+	RUN：创建镜像过程中执行，可以有多个
+	CMD: 容器运行后执行，可以有多个，只有最后一个有效，会被docker run后命令替换
+	ENTRYPOINT: 容器运行后执行，只有一个， ENTRYPOINT 不会被忽略，一定会被执行，即使运行 docker run 时指定了其他命令
+
+2. CMD为ENTRYPOINT提供参数时必须使用exec格式参数
